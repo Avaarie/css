@@ -50,7 +50,7 @@
 
         <section class="features-section">
             <div class="cotainer">
-                <ul>
+                <ul class="features-list">
                     <li>Unlimitd Tasks</li>
                     <li>SMS Task Reminders</li>
                     <li>Confetti Explosions upon Task Completions</li>
@@ -109,5 +109,21 @@
                 </div>
             </div>
         </section>
+
+        <script>
+
+            const mobileBtn = document.getElementById('mobile-cta');
+                  nav = document.querySelector('nav');
+                  moblieBtnExit = document.getElementById('mobile-exit');
+
+            mobileBtn.addEventListener('click', () => {
+                nav.classList.add('menu-btn');
+            })
+
+            moblieBtnExit.addEventListener('click', () => {
+                nav.classList.remove('menu-btn');
+            })
+
+        </script>
     </body>
 </html>
